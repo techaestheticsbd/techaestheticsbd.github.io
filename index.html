@@ -26,7 +26,7 @@
         }
 
         html {
-            scroll-behavior: smooth; /* Smooth scrolling for the buttons */
+            scroll-behavior: smooth;
         }
 
         body {
@@ -322,44 +322,33 @@
             color: var(--white);
         }
 
-        /* Embedded Google Form Section */
-        .order-section {
-            padding: 80px 5%;
+        /* About Us Section */
+        .about {
+            padding: 100px 5%;
             background-color: var(--bg-color);
             text-align: center;
         }
 
-        .order-container {
+        .about-container {
             max-width: 800px;
             margin: 0 auto;
-            background: var(--white);
-            padding: 40px 20px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
         }
 
-        .order-section h2 {
+        .about h2 {
             font-family: var(--font-heading);
             font-size: 3rem;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
             letter-spacing: -2px;
             color: var(--text-dark);
             font-weight: 800;
         }
 
-        .order-section p.contact-sub {
+        .about p {
             font-size: 1.1rem;
             color: var(--accent-teal);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-weight: 400;
-        }
-
-        .iframe-wrapper {
-            width: 100%;
-            border-radius: 10px;
-            overflow: hidden;
-            border: 1px solid rgba(0,0,0,0.05);
-            background: #fff; /* Ensure background is white for form clarity */
+            line-height: 1.8;
         }
 
         /* Contact Section */
@@ -460,35 +449,6 @@
             font-size: 1.2rem;
         }
 
-        /* About Us Section */
-        .about {
-            padding: 100px 5%;
-            background-color: var(--bg-color);
-            text-align: center;
-        }
-
-        .about-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .about h2 {
-            font-family: var(--font-heading);
-            font-size: 3rem;
-            margin-bottom: 30px;
-            letter-spacing: -2px;
-            color: var(--text-dark);
-            font-weight: 800;
-        }
-
-        .about p {
-            font-size: 1.1rem;
-            color: var(--accent-teal);
-            margin-bottom: 20px;
-            font-weight: 400;
-            line-height: 1.8;
-        }
-
         /* Footer */
         footer {
             background-color: var(--text-dark);
@@ -524,7 +484,7 @@
             nav a { margin: 0 10px; font-size: 0.85rem;}
             .hero h1 { font-size: 2.8rem; letter-spacing: -2px;}
             .hero { padding: 120px 20px; }
-            .features h2, .order-section h2, .contact h2 { font-size: 2.2rem; }
+            .features h2, .contact h2 { font-size: 2.2rem; }
             .card h3 { font-size: 1.5rem; }
             .contact-card { width: 100%; max-width: none; }
             .card-actions { flex-direction: column; }
@@ -579,15 +539,16 @@
     <section class="features" id="shop">
         <h2>Curated for Your Lifestyle</h2>
         <div class="grid">
+            
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=600&h=400&auto=format&fit=crop" alt="Smart Home Hub and Speaker" class="card-img">
+                <img src="mouse.jpg" alt="Premium Wireless Mouse" class="card-img">
                 <div class="card-body">
-                    <h3>Smart Home Tech</h3>
-                    <p>Automate your space with intelligent devices that blend seamlessly into your home decor.</p>
+                    <h3>Premium Wireless Mouse</h3>
+                    <p>Ergonomic design with flawless tracking. A sleek, high-performance addition to your upgraded desk setup.</p>
                     
                     <div class="card-actions">
-                        <a href="https://wa.me/8801805528459?text=Hi!%20I%20would%20like%20to%20order%20the%20Smart%20Home%20Tech." target="_blank" rel="noopener noreferrer" class="btn-small btn-wa">WhatsApp</a>
-                        <a href="#order" class="btn-small btn-form">Order Form</a>
+                        <a href="https://wa.me/8801805528459?text=Hi!%20I%20would%20like%20to%20order%20the%20Premium%20Wireless%20Mouse." target="_blank" rel="noopener noreferrer" class="btn-small btn-wa">WhatsApp</a>
+                        <a href="checkout.html" class="btn-small btn-form">Order Form</a>
                     </div>
                 </div>
             </div>
@@ -600,7 +561,7 @@
                     
                     <div class="card-actions">
                         <a href="https://wa.me/8801805528459?text=Hi!%20I%20would%20like%20to%20order%20the%20Premium%20Audio." target="_blank" rel="noopener noreferrer" class="btn-small btn-wa">WhatsApp</a>
-                        <a href="#order" class="btn-small btn-form">Order Form</a>
+                        <a href="checkout.html" class="btn-small btn-form">Order Form</a>
                     </div>
                 </div>
             </div>
@@ -613,20 +574,9 @@
                     
                     <div class="card-actions">
                         <a href="https://wa.me/8801805528459?text=Hi!%20I%20would%20like%20to%20order%20the%20Wearables." target="_blank" rel="noopener noreferrer" class="btn-small btn-wa">WhatsApp</a>
-                        <a href="#order" class="btn-small btn-form">Order Form</a>
+                        <a href="checkout.html" class="btn-small btn-form">Order Form</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="order-section" id="order">
-        <div class="order-container">
-            <h2>Place Your Order</h2>
-            <p class="contact-sub">Fill out the form below and we will contact you immediately to confirm delivery.</p>
-            
-            <div class="iframe-wrapper">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdhseZ3BUP6mOAJf-lJ77jR8kfcBrSuhHGW7XUiGsntK5OZgg/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading Form...</iframe>
             </div>
         </div>
     </section>
